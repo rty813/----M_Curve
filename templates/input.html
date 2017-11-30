@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta itemprop="name" content="θ-β-M曲线查询" />
+    <meta itemprop="image" content="https://www.baidu.com/link?url=iLyeRGTI3JzOvgkIaIkB1U7bBet3WyGXNsN5fXbs8aQI-K8_2KGdQ5PvlqCeS7RqtbJPKClbiGlmdu4s4PkggIL1iJJh3MWvFZPUncjDmT39jbaSe85R49WtMoYNU-MVes6FI9alClDosjg_JUAxBaFpvqmloDsGNv7K3aNlKzwYWtqkQVGYSjDi5q11JiSTeW68NQiejTH3_yEXVcnXl9cSo6uqXQ04hExbHd0gyv_LM6LLL4c3t5baEQhB7qs8QLrdSmxCdsLPwMjV1qZYZPTrdkrwkEXtyI4FbeIStuymzGRLrK8Ncmv5QLWZRqmfQuRFC79GOSuCr89xfIGHKN2NSMNqtpLIBrn5ftIZVSlstrdhfgvzEMBLc_PQEubm0jWtRyLbxEGH-edtlT4F1Qu7fpCtDkH1WoP48H9OL5xZRHqxaHkwCWmQPvYxiA5yAAZw0M2zF2tziWVTjckpohLGdGw9LSUYwarp20uCuhqfMfAR3tgdgoKsZPCm-dfZultrE-dqgsaGRiz2XLbivlhEXQwLhPv4KxrThz2SsxGIIMMH2iOivMEbYwCZPFU14syreExFbmbW7byQ3IEwjaaf6quxK5ktyfqgW0aORBB5_HoCL3Z-OnF1wECmtEn2uScHDOsvHE775YhOc1QHSuFyeAymn7Z1qsKajPsrgBsxEgukeY2LEU57-D_r6jfk&timg=https%3A%2F%2Fss0.bdstatic.com%2F94oJfD_bAAcT8t7mm9GUKT-xh_%2Ftimg%3Fimage%26quality%3D100%26size%3Db4000_4000%26sec%3D1512005468%26di%3Daf86dc9b13d9c6c88b6c8ebac21d9ca6%26src%3Dhttp%3A%2F%2Fwanzao2.b0.upaiyun.com%2Fsystem%2Fpictures%2F33229193%2Foriginal%2F1455636286_600x600.png&click_t=1512005471652&s_info=1008_690&wd=&eqid=f41c7ec500001e31000000035a1f5f5c"
+    />
+    <title>θ-β-M</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/path/to/bootstrap/css/bootstrap.css" />
+
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1>欢迎</h1>
+            <p>你可以用本网页来计算斜激波参数，免去查θ-β-M的烦恼（多个参数用空格隔开）</p>
+        </div>
+
+        <form class="form-horizontal" role="form" method="POST" action="/">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="firstname" class="col-sm-2 control-label">来流马赫数</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">M=</span>
+                        <input type="text" class="form-control" name="m" id="m" placeholder="必填" data-bv-message="The username is not valid" required
+                            data-bv-notempty-message="The username is required and cannot be empty" pattern="[0-9. ]+" data-bv-regexp-message="The username can only consist of alphabetical, number"
+                        />
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="col-sm-2 control-label">流动偏转角</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">θ=</span>
+                        <input type="text" class="form-control" name="theta" id="theta" placeholder="可选" pattern="[0-9. ]+">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="col-sm-2 control-label">激波角</label>
+                <div class="col-sm-10">
+                    <div class="input-group">
+                        <span class="input-group-addon">β=</span>
+                        <input type="text" class="form-control" name="beta" id="beta" placeholder="可选" pattern="[0-9. ]+">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-ok-circle"></span> 运算
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+</body>
